@@ -1,0 +1,52 @@
+[
+  {
+      "id": "1",
+      "courseCreator": "Steve",
+      "courseDescription": "This is a starter course for shield handling",
+      "discount": 10,
+      "discountValidTill": "2021-04-30T04:30:00.000Z",
+      "price": 10000,
+      "tags": [
+          "world saving"
+      ],
+      "title": "shield"
+  },
+  {
+      "id": "2",
+      "courseCreator": "Loki",
+      "courseDescription": "He is adopted",
+      "discount": 7,
+      "discountValidTill": "2021-04-30T04:30:00.000Z",
+      "price": 1400,
+      "tags": [
+          "mischief"
+      ],
+      "title": "How to annoy your brother"
+  },
+  {
+
+
+    "id": "3",
+    "courseCreator": "Joseph Marie",
+    "courseDescription": "This is a starter course for Raect",
+    "discount": 10,
+    "discountValidTill": "2021-04-30T04:30:00.000Z",
+    "price": 10000,
+    "tags": [
+        "React","React"
+    ],
+    "title": "Responsive Design Course XYZ How to design responsive templates"
+  },
+  {
+    "id": "3x0CTgf7UMzmfmbt5U5i",
+    "courseCreator": "Steve",
+    "courseDescription": "This is a starter course for shield handling",
+    "discount": 10,
+    "discountValidTill": "2021-04-30T04:30:00.000Z",
+    "price": 10000,
+    "tags": [
+        "world saving"
+    ],
+    "title": "shield"
+}
+]

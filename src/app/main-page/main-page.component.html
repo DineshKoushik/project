@@ -1,0 +1,53 @@
+<div class="flex-container wrapper">
+  <section class="content" fxLayout="column" fxLayoutGap="22px">
+    <div class="product-filter">
+      <h3>All courses</h3>
+      <div class="dropdown-sort">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <a href="#">Low to High</a>
+
+          <a href="#">High to Low</a>
+        </div>
+      </div>
+    </div>
+    <div
+      *ngFor="
+        let course of courses | paginate: { itemsPerPage: 4, currentPage: p };
+        let i;
+        index
+      "
+    >
+      <div class="section-courses" fxFlex fxLayoutGap="2px">
+        <div class="left-box"></div>
+        <div class="text-alignment">
+          <h3>{{ course.title }}</h3>
+        </div>
+        <div class="image-align1">
+          <img src="../../assets/Group-37.svg" class="image1" />
+        </div>
+        <div class="image-align2">
+          <img src="../../assets/Group-37.svg" class="image2" />
+        </div>
+        <div class="author-align">
+          <p>{{ course.courseCreator }}</p>
+          <p></p>
+        </div>
+        <button class="star"><i class="fa fa-star"></i></button>
+        <div class="price-align">
+          <p>Rs. {{ course.price - course.discount }}/-</p>
+        </div>
+        <div class="org-price-align">
+          <p>Rs. {{ course.price }}</p>
+        </div>
+        <button class="add-to-cart-btn" (click)="addToCart(i)">
+          ADD TO CART
+        </button>
+        <div class="image-align3">
+          <img src="../../assets/Path 20.svg" class="image3" />
+        </div>
+      </div>
+    </div>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </section>
+</div>
